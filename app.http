@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/agenda/?date=2021-02-02
+
+###
+
+
+###
+
+POST  http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 9,
+ "todo": "sample todo 9",
+ "priority": "HIGH",
+ "status": "DONE",
+ "category": "WORK",
+ "dueDate": "2021-01-01"
+}
+
+
+###
+
+DELETE  http://localhost:3000/todos/9
+
+
+###
+
+PUT http://localhost:3000/todos/9
+Content-Type:application/json
+
+{ "category": "LEARNING" }
